@@ -4,6 +4,49 @@
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
 }
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway-Regular.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway-Medium.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway-SemiBold.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway-Bold.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway-ExtraBold.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../fonts/Raleway-Black.ttf) format('ttf');
+  font-style: normal;
+  font-weight: 900;
+}
+
 /* Navbar */
 .nav-wrap {
   width: 100%;
@@ -65,7 +108,7 @@
 .platforms-wrap {
   width: 100%;
   height: auto;
-  overflow: hidden;
+ 
 }
 .procedure-container .row {
   height: 80vh;
@@ -75,16 +118,16 @@
 .platforms-wrap .row {
   margin: 0;
 }
-.procedure-img,
-.platforms-img {
-  width: 200%;
-  height: auto;
+.procedure-container .col-md-4{
   position: relative;
-  right: 14rem;
 }
-/* .procedure-container .row .col-md-4 img{
-    width: ;
-}  */
+.procedure-img{
+  width: 200%;
+  position: absolute;
+  top: -15rem;
+  right: -13rem;
+
+}
 
 .procedure-container .row .col-md-8 {
   padding-top: 1.5rem;
@@ -104,8 +147,9 @@
 }
 .procedure-head {
   font-size: 3rem;
-  margin-bottom: 2rem;
-  text-align: center;
+  margin-bottom: 3rem;
+  padding-left: 7rem;
+  font-weight: 700;
 }
 .procedure-head span {
   color: #f85641;
@@ -122,9 +166,13 @@
   justify-content: center;
   margin-right: 1rem;
 }
+.procedure-card h4{
+  font-weight: 700;
+}
 
 .procedure-card p {
   text-align: center;
+  font-weight: 600;
 }
 .icon {
   width: 4rem;
@@ -135,12 +183,11 @@
 /* Platforms-wrap */
 .platforms-wrap {
   background-color: #171312;
-  height: 87vh;
-  overflow: hidden;
+  height: auto;
+  
 }
 .platforms-img {
-  bottom: 18rem;
-  right: 17rem;
+  width: 100%;
 }
 .platforms-txt {
   color: #fff;
@@ -149,6 +196,7 @@
 }
 .platforms-txt h1 {
   font-size: 5rem;
+  font-weight: 600;
 }
 .badge-wrap {
   display: flex;
@@ -156,10 +204,20 @@
   justify-content: space-around;
 }
 .badge-img-wrap {
-  width: 30%;
+  width: 46%;
+  height: fit-content;
+
 }
 .badge-img {
-  width: 60%;
+  width: 50%;
+  margin-right: 1rem;
+}
+.store{
+  display: flex;
+}
+.arrow{
+  display: flex;
+  justify-content: center;
 }
 .cta p {
   display: inline-block;
@@ -171,7 +229,7 @@
   border-bottom: 1px solid #fff;
   width: fit-content;
   position: relative;
-  left: 8rem;
+  left: 6rem;
 }
 .cta span a {
   color: #fff;
@@ -222,6 +280,8 @@
 .copyright {
   text-align: center;
   font-weight: 800;
+  margin: 3rem 0 2rem;
+
 }
 .media-links {
   font-size: 2rem;
@@ -233,5 +293,62 @@
   font-weight: 600;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 380px) {
+  /* Procedure */
+  .procedure-img{
+    display: none;
+  }
+
+  /* Platforms */
+  .platforms-txt{
+    padding-left: calc(var(--bs-gutter-x) * .5);
+  }
+  .platforms-txt h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .badge-wrap{
+    flex-direction: column;
+  }
+  .arrow{
+    display: none;
+  }
+  .store{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .store img{
+    margin-right: unset;
+    width: 40%;
+  }
+  .cta{
+    position: unset;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+    padding-bottom: .3rem;
+    
+    
+  }
+  .cta p{
+    font-size: 1rem;
+    margin-right: unset;
+  }
+  /* Footer */
+  .logo-b{
+    width: 50%;
+  }
+  .features2{
+    margin-bottom: 4rem;
+  }
+  .social-media, .lnks {
+    text-align: center;
+  }
+  .media-link-wrap, .features-title{
+    display: flex;
+    justify-content: center;
+  }
 }
