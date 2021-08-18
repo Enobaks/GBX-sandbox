@@ -165,6 +165,11 @@
   align-items: center;
   justify-content: center;
   margin-right: 1rem;
+  filter: drop-shadow(0px -.5px 4px rgba(66, 65, 65, 0.658));
+  transition: transform .5s;
+}
+.procedure-card:hover{
+  transform: scale(1.07);
 }
 .procedure-card h4{
   font-weight: 700;
@@ -292,6 +297,100 @@
 .social-media h4 {
   font-weight: 600;
 }
+
+
+@media screen and (max-width: 770px) {
+  /* Procedure */
+  .procedure-img{
+    display: none;
+  }
+  .procedure-container .row{
+    height: fit-content;
+  }
+  .procedure-container .col-md-8{
+    width: 100%;
+  }
+  .procedure-head{
+    padding-left: 0;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .procedure-card-wrap{
+    flex-direction: row;
+    justify-content: center;
+  }
+  div.procedure-card:last-child{
+    margin-right: 0;
+  }
+  .procedure-card{
+    width: 100%;
+    margin-bottom: 2.5rem;
+    /* margin-right: 0; */
+  }
+  .two .icon{
+    right: 1rem;
+  }
+
+  /* Platforms */
+  .platforms-txt{
+    padding-left: calc(var(--bs-gutter-x) * .5);
+  }
+  .platforms-txt h1{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  .badge-wrap{
+    flex-direction: column;
+  }
+  .arrow{
+    display: none;
+  }
+  .store{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .store img{
+    margin-right: unset;
+    width: 40%;
+  }
+  .cta{
+    position: unset;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+    padding-bottom: .3rem;
+  }
+  .cta p{
+    font-size: 1rem;
+    margin-right: unset;
+  }
+  /* Footer */
+  .logo-b{
+    width: 50%;
+  }
+  .features-title h4{
+    width: 70%;
+  }
+  .features2{
+    margin-bottom: 4rem;
+  }
+  .social-media, .lnks {
+    text-align: center;
+  }
+  .media-link-wrap, .features-title{
+    display: flex;
+    justify-content: center;
+  }
+  .media-links{
+    width: 85%;
+    justify-content: space-around;
+  }
+}
+
 
 @media screen and (max-width: 380px) {
   /* Procedure */
