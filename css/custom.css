@@ -298,6 +298,26 @@
   .procedure-img{
     display: none;
   }
+  .procedure-container .row{
+    height: fit-content;
+  }
+  .procedure-head{
+    padding-left: 0;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+  .procedure-card-wrap{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .procedure-card{
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .two .icon{
+    right: 17rem;
+  }
 
   /* Platforms */
   .platforms-txt{
