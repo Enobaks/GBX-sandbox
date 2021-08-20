@@ -299,7 +299,7 @@
 }
 
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 1000px) {
   /* Procedure */
   .procedure-img{
     display: none;
@@ -392,7 +392,7 @@
 }
 
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 600px) {
   /* Procedure */
   .procedure-img{
     display: none;
@@ -449,8 +449,6 @@
     justify-content: space-between;
     margin: 4rem 0;
     padding-bottom: .3rem;
-    
-    
   }
   .cta p{
     font-size: 1rem;
