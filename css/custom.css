@@ -414,10 +414,7 @@
     width: 100%;
     margin-bottom: 2.5rem;
   }
-  .two .icon{
-    right: 15px;
-  }
-
+  
   /* Platforms */
   .platforms-txt{
     padding-left: calc(var(--bs-gutter-x) * .5);
